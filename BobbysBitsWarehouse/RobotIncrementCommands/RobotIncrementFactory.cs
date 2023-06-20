@@ -1,5 +1,4 @@
-﻿using BobbysBitsWarehouse.Validation;
-
+﻿
 namespace BobbysBitsWarehouse.RobotIncrementCommands
 {
     public interface IRobotIncrementFactory
@@ -9,13 +8,6 @@ namespace BobbysBitsWarehouse.RobotIncrementCommands
 
     public class RobotIncrementFactory : IRobotIncrementFactory
     {
-        private readonly IBoundaryValidation _boundaryValidation;
-
-        public RobotIncrementFactory(IBoundaryValidation boundaryValidation)
-        {
-            _boundaryValidation = boundaryValidation;
-        }
-
         public RobotCommandIncrement? Create(char userInput)
         {
             try

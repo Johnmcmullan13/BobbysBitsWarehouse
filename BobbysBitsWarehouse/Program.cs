@@ -1,5 +1,4 @@
 ﻿using BobbysBitsWarehouse.RobotIncrementCommands;
-using BobbysBitsWarehouse.Validation;
 
 namespace BobbysBitsWarehouse
 {
@@ -7,7 +6,7 @@ namespace BobbysBitsWarehouse
     {
         static void Main(string[] args)
         {
-            var robotCommands = new RobotCommands(10,10, new RobotIncrementFactory(new BoundaryValidation()));
+            var robotCommands = new RobotCommands(10,10, new RobotIncrementFactory());
             var isContinue = true;
             var robotStatus = new RobotStatus();
 

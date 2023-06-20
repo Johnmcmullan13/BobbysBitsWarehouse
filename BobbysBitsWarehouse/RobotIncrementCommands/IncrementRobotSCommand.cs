@@ -1,6 +1,4 @@
-﻿using BobbysBitsWarehouse.Validation;
-
-namespace BobbysBitsWarehouse.RobotIncrementCommands
+﻿namespace BobbysBitsWarehouse.RobotIncrementCommands
 {
     public class IncrementRobotSCommand : RobotCommandIncrement
     {
